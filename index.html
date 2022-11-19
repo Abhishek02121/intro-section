@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/3e35ffa6eb.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <img src="./images/logo.svg">
+  <div class="sub-nav">  
+    <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Features<i class="fa-sharp fa-solid fa-caret-down"></i></button>
+    <div id="myDropdown" class="dropdown-content hide">
+      <a href="#"><i class="fa-solid fa-clipboard-list"></i>Todo List</a>
+      <a href="#"><i class="fa-solid fa-calendar-days"></i>Calender</a>
+      <a href="#"><i class="fa-solid fa-bell"></i>Reminders</a>
+      <a href="#"><i class="fa-solid fa-clock"></i>Planning</a>
+    </div>    
+    <button class="Cbtn" id="company"onclick="myFunction1()">Company<i class="fa-sharp fa-solid fa-caret-down"></i></button>
+    <div id="cDropdown"class="dropdown-content hide">
+      <a href="#">History</a>
+      <a href="#">Our Team</a>
+      <a href="#">Blog</a>
+    </div>
+    <button>Careers</button>
+    <button>About </button>         
+    </div>  
+    <div class="sub-nav1">
+      <button>Login</button>
+      <button id="register">Register</button>
+    </div>   
+  </div> 
+   <div onclick="myFunction3()" class="menu Cmenu">
+     <img onclick ="myFunction4()" class="burger"src="./images/icon-menu.svg">
+     <img onclick = "myFunction5()" class="hide cross"src="./images/icon-close-menu.svg">     
+   </div> 
+   <div id="side" class="side-menu hide">
+      <a href="#"><i class="fa-solid fa-clipboard-list"></i>Todo List</a>
+      <a href="#"><i class="fa-solid fa-calendar-days"></i>Calender</a>
+      <a href="#"><i class="fa-solid fa-bell"></i>Reminders</a>
+      <a href="#"><i class="fa-solid fa-clock"></i>Planning</a>
+      <a href="#">History</a>
+      <a href="#">Our Team</a>
+      <a href="#">Blog</a>
+      <button class="Smenu-btn">Login</button>
+      <button class="Smenu-btn" id="reBtn">Register</button>
+   </div>   
+  </div>
+  <div class="sub-container">
+    <div class="first-half">
+      <h1>Make <br>remote work</h1><br>
+       <p>Get your team in sync, no matter your location. 
+        Streamline processes, create team rituals,
+        and watch productivity soar.</p>
+       <button>Learn more</button>
+       <div class="tags"> 
+       <img src="./images/client-databiz.svg">
+       <img src="./images/client-audiophile.svg">
+       <img src="./images/client-meet.svg">
+       <img src="./images/client-maker.svg">
+       </div>
+    </div>
+    <div class="second-half">
+      <img src="./images/image-hero-desktop.png">
+    </div>
+  </div> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
